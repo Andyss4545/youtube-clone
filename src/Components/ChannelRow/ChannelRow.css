@@ -1,0 +1,33 @@
+.channelRow{
+    display: flex;
+    align-items: center;
+    width: 70%;
+}
+
+.channelRow_logo{
+    height: 120px !important;
+    width: 120px !important;
+    margin: 10px 60px;
+    border-radius: 50%;
+}
+
+.channelRow_text{
+    display: flex;
+    flex-direction: column;
+}
+
+.channelRow_text h4{
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+}
+
+.channelRow_text p{
+       color: #606060;
+       font-size: small !important;
+}
+
+
+@media screen and (max-width: ) {
+     
+}
