@@ -9,6 +9,7 @@ import AccountCircleSharpIcon from "@mui/icons-material/AccountCircleSharp";
 import { Link } from "react-router-dom";
 
 let NavBar = () => {
+  //  tell the broser to show inputQuery(text) as empty
   const [inputQuery, setInputQuery] = useState({
     text: "",
   });
@@ -16,6 +17,7 @@ let NavBar = () => {
   let { text } = inputQuery;
 
   const updateInput = (event) => {
+    // create updateInput function to target  event tex value to update tex while typing
     setInputQuery(() => ({
       ...inputQuery,
       text: event.target.value,
@@ -27,6 +29,7 @@ let NavBar = () => {
       {/* <pre>{JSON.stringify(text)}</pre> */}
       <div className="header_left">
         <MenuSharpIcon />
+        {/**Link logo to home page */}
         <Link to={"/"}>
           <img
             className="header_logo"
@@ -45,6 +48,7 @@ let NavBar = () => {
           type="text"
         />
 
+        {/** link searchIcon to the search page and pass the ${text}*/}
         <Link to={`/search/${text}`}>
           <SearchSharpIcon className="header_inputBtn" />
         </Link>

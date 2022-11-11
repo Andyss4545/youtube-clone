@@ -3,13 +3,14 @@ import Recommended from "../Recommended/Recommended";
 import SideBar from "../SideBar/SideBar";
 import "../Home/Home.css";
 
-function Home() {
+let Home = () => {
+  // tell the browser to import and show Sidebar.jsx and Recommended.jsx
   return (
     <div className="home">
       <SideBar />
       <Recommended />
     </div>
   );
-}
+};
 
 export default Home;

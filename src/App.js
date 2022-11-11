@@ -14,7 +14,7 @@ function App() {
                <Routes>
                     <Route path="/" element={<Home/>} />
                     <Route path='/search/:searchTerm'  element={<SearchPage/>} />
-                    
+                    {/** add :searchTerm to the search page */}
                </Routes>
          </BrowserRouter>
     </div>

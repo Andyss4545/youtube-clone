@@ -10,6 +10,8 @@ function VideoRow({
   title,
   image,
 }) {
+
+  // pass views, subs, description, timestamp, channel, title, image as props
   return (
     <div className="videoRow">
       <img src={image} alt={title} />

@@ -6,6 +6,7 @@ import ChannelRow from "../ChannelRow/ChannelRow";
 import VideoRow from "../VideoRow/VideoRow";
 
 function SearchPage() {
+  // import Channel Row nad add propeties such ass image, channel, subs etc
   return (
     <React.Fragment>
       <div className="searchPage">
